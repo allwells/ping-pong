@@ -1,0 +1,45 @@
+<html><head>
+  <SCRIPT src="./web-files/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'Ping-Pong JavaFx.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPGpubHAgc3BlYz0iMS4wIiB4bWxuczpqZng9Imh0dHA6Ly9qYXZhZnguY29tIiBocmVmPSJQaW5nLVBvbmcgSmF2YUZ4LmpubHAiPgogIDxpbmZvcm1hdGlvbj4KICAgIDx0aXRsZT5QaW5nLVBvbmcgSmF2YUZ4PC90aXRsZT4KICAgIDx2ZW5kb3I+YWxsaWU8L3ZlbmRvcj4KICAgIDxkZXNjcmlwdGlvbj5udWxsPC9kZXNjcmlwdGlvbj4KICAgIDxvZmZsaW5lLWFsbG93ZWQvPgogIDwvaW5mb3JtYXRpb24+CiAgPHJlc291cmNlcz4KICAgIDxqMnNlIHZlcnNpb249IjEuNisiIGhyZWY9Imh0dHA6Ly9qYXZhLnN1bi5jb20vcHJvZHVjdHMvYXV0b2RsL2oyc2UiLz4KICA8L3Jlc291cmNlcz4KICA8YXBwbGV0LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJjb20uamF2YWZ4Lm1haW4uTm9KYXZhRlhGYWxsYmFjayIgIG5hbWU9IlBpbmctUG9uZyBKYXZhRngiID4KICAgIDxwYXJhbSBuYW1lPSJyZXF1aXJlZEZYVmVyc2lvbiIgdmFsdWU9IjguMCsiLz4KICA8L2FwcGxldC1kZXNjPgogIDxqZng6amF2YWZ4LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJwaW5nLnBvbmcuamF2YWZ4LlBpbmdQb25nTWFpbiIgIG5hbWU9IlBpbmctUG9uZyBKYXZhRngiIC8+CiAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+Cjwvam5scD4K'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedping.pong.javafx() {
+        dtjava.embed(
+            {
+                id : 'ping.pong.javafx',
+                url : 'Ping-Pong JavaFx.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPGpubHAgc3BlYz0iMS4wIiB4bWxuczpqZng9Imh0dHA6Ly9qYXZhZnguY29tIiBocmVmPSJQaW5nLVBvbmcgSmF2YUZ4LmpubHAiPgogIDxpbmZvcm1hdGlvbj4KICAgIDx0aXRsZT5QaW5nLVBvbmcgSmF2YUZ4PC90aXRsZT4KICAgIDx2ZW5kb3I+YWxsaWU8L3ZlbmRvcj4KICAgIDxkZXNjcmlwdGlvbj5udWxsPC9kZXNjcmlwdGlvbj4KICAgIDxvZmZsaW5lLWFsbG93ZWQvPgogIDwvaW5mb3JtYXRpb24+CiAgPHJlc291cmNlcz4KICAgIDxqMnNlIHZlcnNpb249IjEuNisiIGhyZWY9Imh0dHA6Ly9qYXZhLnN1bi5jb20vcHJvZHVjdHMvYXV0b2RsL2oyc2UiLz4KICA8L3Jlc291cmNlcz4KICA8YXBwbGV0LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJjb20uamF2YWZ4Lm1haW4uTm9KYXZhRlhGYWxsYmFjayIgIG5hbWU9IlBpbmctUG9uZyBKYXZhRngiID4KICAgIDxwYXJhbSBuYW1lPSJyZXF1aXJlZEZYVmVyc2lvbiIgdmFsdWU9IjguMCsiLz4KICA8L2FwcGxldC1kZXNjPgogIDxqZng6amF2YWZ4LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJwaW5nLnBvbmcuamF2YWZ4LlBpbmdQb25nTWFpbiIgIG5hbWU9IlBpbmctUG9uZyBKYXZhRngiIC8+CiAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+Cjwvam5scD4K'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedping.pong.javafx);
+</script>
+
+</head><body>
+<h2>Test page for <b>Ping-Pong JavaFx</b></h2>
+  <b>Webstart:</b> <a href='Ping-Pong JavaFx.jnlp' onclick="return launchApplication('Ping-Pong JavaFx.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>
